@@ -208,7 +208,7 @@ echo -e "┏━┓┏━┓╺┳╸┏━┓┏┓ ┏━┓╺┳╸
 ┣━┛┣━┫ ┃ ┃ ┃┣┻┓┃ ┃ ┃ 
 ╹  ╹ ╹ ╹ ┗━┛┗━┛┗━┛ ╹ "|lolcat
 msg -bar
-[[ -n $1 ]] && { print_center -blak "$1" && msg -bar ; }
+[[ ! -z $1 ]] && print_center -blak "$1" && msg -bar
 }
 
 export -f fun_tit
